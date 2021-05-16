@@ -1,38 +1,84 @@
-.App {
+.header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 10vw;
+  background-color: rgba(244, 124, 124, 0.8);
+}
+
+.card{
+  font-size: 2rem;
+  padding: 0.5rem;
+  background-color: rgba(244, 124, 124, 1);
+}
+
+.card .fas{
+  margin-right: 0.5rem;
+}
+
+.card-title{
+  font-size: 3rem;
+}
+
+.button-container{
+  display: grid;
+  justify-content: center;
+  gap: 0.5rem 0.5rem;
+  grid-template-columns: repeat(8, 4rem);
+  grid-template-rows: repeat(8, 4rem);
+  padding: 1rem 10vw;
+}
+
+.button{
+  border: none;
+  background-color: #70a1d7;
+  font-size: 2rem;
+}
+
+.blue{
+  background-color: #70a1d7;
+}
+
+.grey{
+  background-color: #a8a7a7;
+}
+
+.modal-container{
+  position: fixed;
+  top:0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(121, 121, 121, 0.4);
+
+}
+
+.modal{
+  background-color: #f7f7f7;
+  border-radius: 1rem;
+  padding: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal h2{
+  font-size: 4rem;
+  line-height: 4rem;
+  color: rgba(244, 124, 124, 1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modal button{
+  font-size: 2rem;
+  background-color: #70a1d7;
+  color: #f7f7f7;
+  padding: 0.7rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal button:hover{
+  opacity: 0.6;
 }
